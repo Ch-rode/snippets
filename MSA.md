@@ -1,4 +1,7 @@
-## 1. SOFTWARE
+## 1. SOFTWARE: T-COFFEE
+[LINK](https://www.ebi.ac.uk/Tools/msa/tcoffee/)  
+[MORE INFO](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/T-coffee+Help+and+Documentation#TcoffeeHelpandDocumentation-sequence)
+![image](https://github.com/Ch-rode/snippets/assets/61243245/73280a1b-bfa1-4882-ac75-cae91e5c577c)
 
 ## 2. VISUALISATION  
 **LIBRARY**: [pyMSAviz](https://github.com/moshi4/pyMSAviz/blob/main/docs/getting_started.ipynb)   
