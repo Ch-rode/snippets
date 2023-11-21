@@ -13,3 +13,8 @@
  ```
  # chmod -R g+rwX /data
  ```
+### ADD A USER
+```
+sudo useradd user_name
+sudo passwd user_name
+```
