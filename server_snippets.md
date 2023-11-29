@@ -13,6 +13,8 @@
  ```
  # chmod -R g+rwX /data
  ```
+
+sudo chown -R <username>: <folderName>
 ### ADD A USER
 ```
 sudo useradd user_name
