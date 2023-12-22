@@ -1,4 +1,4 @@
-## 1. Marker in a scatterpplot with the same scale of the axes (from [here](https://stackoverflow.com/questions/36458458/python-scatter-plot-area-size-proportional-axis-length)
+## 1. Marker in a scatterpplot with the same scale of the axes (from [here](https://stackoverflow.com/questions/36458458/python-scatter-plot-area-size-proportional-axis-length))
 - the size of the markers is in points, not in pixels. In typography, the point is the smallest unit of measure and correspond in matplotlib to a fixed length of 1/72 inch. In contrast, the size of a pixel will vary following the figure dpi and size.
 - the size of the markers in plt.scatter are related to the diameter of the circles, not the radius.
 
