@@ -34,5 +34,6 @@ scat.set_sizes(size_pt)
 
 # Save and show figure:
 plt.show()
-
 ```
+![image](https://github.com/Ch-rode/snippets/assets/61243245/5d6fae0b-879a-4bed-9248-b53a069fd3d9)
+
