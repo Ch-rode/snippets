@@ -9,6 +9,6 @@
 
 ## DSSP
 Dssp installation via conda (`conda install -c salilab dssp`) leads to a lot of issues and the Notebook is apparently not working anymore.
-Install dssp via old approach from [here]([url](https://github.com/cmbi/dssp)https://github.com/cmbi/dssp) locally (also without python env).  
+Install dssp via old approach from [here](https://github.com/cmbi/dssp) locally (a python env is not necessary).  
 `mkdssp --version #mkdssp version 3.1.4`
 
