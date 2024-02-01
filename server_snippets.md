@@ -14,7 +14,11 @@
  # chmod -R g+rwX /data
  ```
 
+ ```
 sudo chown -R <username>: <folderName>
+sudo chown -R lazars:temberturegroup /home/lazars
+setfacl -R -m u:<username>:rwx <Folder/File>
+ ```
 ### ADD A USER
 ```
 sudo useradd user_name
