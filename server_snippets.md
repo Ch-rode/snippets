@@ -24,7 +24,9 @@ setfacl -R -m u:<username>:rwx <Folder/File>
 sudo useradd user_name
 sudo passwd user_name
 ```
-## how to kill the GPU based on the PID from nvidia-smi output 
+### how to kill the GPU based on the PID from nvidia-smi output 
 `sudo kill -9 PID`  
 i.e.: `sudo kill -9 2425494`
 ![image](https://github.com/Ch-rode/snippets/assets/61243245/4f05fe6b-bae9-4247-869e-41f6f0dcb977)
+
+###
