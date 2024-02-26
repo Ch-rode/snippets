@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J INDIVIDUAL
-#SBATCH --gres=gpu:lmol:1
+#SBATCH --gres=gpu:a100:1
 #SBATCH --dependency=afterok:21513
 
 lr=(1e-2 1e-3 1e-4 1e-5 1e-2) 
