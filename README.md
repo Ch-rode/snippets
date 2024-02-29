@@ -12,6 +12,7 @@ Dssp installation via conda (`conda install -c salilab dssp`) leads to a lot of 
 Install dssp via old approach from [here](https://github.com/cmbi/dssp) locally (a python env is not necessary).  
 `mkdssp --version #mkdssp version 3.1.4`
 
+## GIT from local to github
 1. Go inside the folder you want to git (after you have a repo on github)
 2. Initialize the folder as a git repo: ```'git init'```
 3. From repo to local : git pull git@github.com:Ch-rode/Chiara-LabBook.git
@@ -24,7 +25,6 @@ git remote add origin git@github.com:Ch-rode/Chiara-LabBook.git
 git push -u origin master
 ```
 
-## GIT from local to github
 Before doing this you should create an ssh key on your local laptop (see following links for instructions) and add it on your personal page on github:  https://github.com/settings/keys
 
 Useful links: 
