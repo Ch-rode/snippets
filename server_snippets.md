@@ -31,7 +31,9 @@ i.e.: `sudo kill -9 2425494`
 
 ### Mount a folder from another server (using nfs0 
 open `/etc/fstab` and add, i.e.:  
-``
+```
+8.8.8.8:/data2               /mounted_data2      nfs nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+```  
 than change the permissions to `nobody` user.
 
 ### Sync the users ID between two different machine: 
