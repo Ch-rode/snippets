@@ -33,3 +33,6 @@ Useful links:
 ## from a3m to fasta
 .a3m is an advanced fasta format that allows for inserts, but prody does not like that, the simplest fix is to reformat a3m to fasta with [reformat.pl]([url](https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl)https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl), which is really fast.  
 i.e. `./reformat.pl uniref90_hits.a3m test.fasta`
+
+## print spectrumbar from pytmol
+https://pymolwiki.org/index.php/Spectrumbar
