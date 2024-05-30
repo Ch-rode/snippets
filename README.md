@@ -36,3 +36,7 @@ i.e. `./reformat.pl uniref90_hits.a3m test.fasta`
 
 ## print spectrumbar from pytmol
 https://pymolwiki.org/index.php/Spectrumbar
+
+## merge folders with also common files
+`rsync -av --ignore-existing source-folder/* destination-folder/`
+
