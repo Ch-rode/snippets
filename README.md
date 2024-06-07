@@ -40,3 +40,6 @@ https://pymolwiki.org/index.php/Spectrumbar
 ## merge folders with also common files
 `rsync -av --ignore-existing source-folder/* destination-folder/`
 
+## SSH reboot server
+`sudo reboot now`
+
