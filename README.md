@@ -43,3 +43,10 @@ https://pymolwiki.org/index.php/Spectrumbar
 ## SSH reboot server
 `sudo reboot now`
 
+## Copy from UBELIX
+scp -r ciao@submit.unibe.ch://storage/homefs/ciao ./
+
+
+
+
+
