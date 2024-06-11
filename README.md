@@ -40,9 +40,6 @@ https://pymolwiki.org/index.php/Spectrumbar
 ## merge folders with also common files
 `rsync -av --ignore-existing source-folder/* destination-folder/`
 
-## SSH reboot server
-`sudo reboot now`
-
 ## Copy from UBELIX
 scp -r ciao@submit.unibe.ch://storage/homefs/ciao ./
 
