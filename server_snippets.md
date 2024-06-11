@@ -43,3 +43,7 @@ It simply requires to manually edit
 /etc/group
 ```
 Such that the uid and gid on server1 matches the ones on server2. 
+
+
+## SSH reboot server
+`sudo reboot now`
