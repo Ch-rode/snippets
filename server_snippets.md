@@ -44,6 +44,10 @@ It simply requires to manually edit
 ```
 Such that the uid and gid on server1 matches the ones on server2. 
 
+### SCANCEL range of jobs
+`for i in $(seq 1000 1010); do scancel $i; done`
+
+
 
 ## SSH reboot server
 `sudo reboot now`
