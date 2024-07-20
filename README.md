@@ -57,7 +57,8 @@ https://pymolwiki.org/index.php/Spectrumbar
 ## Copy from UBELIX
 scp -r ciao@submit.unibe.ch://storage/homefs/ciao ./
 
-
+## Install BLAST locally + set the path
+https://www.ncbi.nlm.nih.gov/books/NBK52640/
 
 
 
