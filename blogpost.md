@@ -35,6 +35,7 @@ The foundation of TemBERTure lies in the protBERT-BFD model, a transformer-based
 #### Database Creation and Data Diversity
 
 A critical aspect of TemBERTure's success is its **robust database**, TemBERTureDB. This database was created by integrating data from multiple sources, including the **Meltome Atlas**, **ProThermDB**, **UniProtKB**, and **BacDive**. The integration of these diverse datasets ensures a comprehensive representation of both thermophilic and non-thermophilic sequences. To address class imbalance, the thermophilic dataset was enriched with additional sequences from the BacDive database, while the non-thermophilic dataset was augmented with challenging examples that exhibited high sequence similarity to thermophilic sequences.
+![F1_Pipeline_350](https://github.com/user-attachments/assets/dd3fa013-1c5a-4d6e-99b5-03c890f66e5c)
 
 **Data diversity** plays a pivotal role in training robust models. TemBERTure's performance highlights the importance of a comprehensive data curation strategy. Models trained on a diverse set of protein sequences from various organisms consistently outperformed those trained on limited datasets. This diversity enables the model to capture the intrinsic features of thermostability rather than merely recognizing evolutionary lineages.
 
@@ -45,6 +46,7 @@ Attention scores are a crucial component in deep learning architectures like tra
 #### Results and Findings
 
 TemBERTure has demonstrated remarkable **capabilities in predicting protein thermostability**. The classifier (TemBERTureCLS) effectively distinguishes between thermophilic and non-thermophilic proteins, while the regression model (TemBERTureTm) predicts melting temperatures. These models offer significant improvements over traditional methods and previous machine learning approaches, underscoring the potential of Deep Learning in this field.
+![F2_SOTA_350](https://github.com/user-attachments/assets/1c0a2475-230b-4cee-86d8-eb297845980b)
 
 #### Future Directions
 
