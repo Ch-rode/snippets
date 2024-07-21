@@ -67,6 +67,29 @@ TemBERTure has demonstrated remarkable **capabilities in predicting protein ther
   <img src="img/F2_SOTA_350.png" alt="SOTA" width="40%">
 </p>
 
+#### Apply TemBERTure on your protein sequences!
+```
+seq = 'MEKVYGLIGFPVEHSLSPLMHNDAFARLGIPARYHLFSVEPGQVGAAIAGVRALGIAGVNVTIPHKLAVIPFLDEVDEHARRIGAVNTIINNDGRLIGFNTDGPGYVQALEEEMNITLDGKRILVIGAGGGARGIYFSLLSTAAERIDMANRTVEKAERLVREGEGGRSAYFSLAEAETRLDEYDIIINTTSVGMHPRVEVQPLSLERLRPGVIVSNIIYNPLETKWLKEAKARGARVQNGVGMLVYQGALAFEKWTGQWPDVNRMKQLVIEALRR'
+```
+
+```
+# Initialize TemBERTureCLS model with specified parameters
+from temBERTure import TemBERTure
+model = TemBERTure(
+    adapter_path='./temBERTure/temBERTure_CLS/',  # Path to the model adapter weights
+    device='cuda',                                # Device to run the model on
+    batch_size=1,                                 # Batch size for inference
+    task='classification'                         # Task type (e.g., classification for TemBERTureCLS)
+)
+```
+```
+In [1]: model.predict([seq])
+100%|██████████████████████████| 1/1 [00:00<00:00, 22.27it/s]
+Predicted thermal class: Thermophilic
+Thermophilicity prediction score: 0.999098474215349
+Out[1]: ['Thermophilic', 0.999098474215349]
+```
+
 #### Future Directions
 
 While TemBERTure represents a significant advancement, there are still opportunities for further improvement. **Expanding the database** with more diverse and comprehensive datasets will enhance model accuracy and generalizability. Additionally, **integrating experimental data** on protein stability under different environmental conditions could provide a more holistic understanding of thermostability.
@@ -75,7 +98,7 @@ While TemBERTure represents a significant advancement, there are still opportuni
 
 TemBERTure marks a pivotal step forward in the prediction of protein thermostability. By combining the strengths of Deep Learning and data diversity, this framework offers a more accurate and informative approach than traditional methods. As the field continues to evolve, TemBERTure and similar models will play an increasingly important role in understanding and harnessing the power of proteins.
 
-For those interested in exploring TemBERTure further, the model and its data are available on [GitHub](https://github.com/ibmm-unibe-ch/TemBERTure).
+For those interested in exploring TemBERTure further, the model and its data are available on [GitHub](https://github.com/ibmm-unibe-ch/TemBERTure). TemBERTureDB can be found on [Zenodo](https://doi.org/10.5281/zenodo.10931927), which also hosts the protein sequences.
 
 
 <p align="center">
