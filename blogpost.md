@@ -47,6 +47,10 @@ Attention scores are a crucial component in deep learning architectures like tra
 
 
 #### Can Sequence Alone Reveal Structural Insights?
+
+https://github.com/user-attachments/assets/e0803097-20bc-4ac1-a36c-b5da43b07866
+
+
 By analyzing these attention scores alongside the 3D structure of proteins, we can gain deeper insights into the interactions between amino acids and their surrounding environment. We asked ourselves if TemBERTureCLS uses structural information beyond only sequence information. To do so, we mapped the attention scores directly onto protein structures. The analysis showed that higher attention scores were consistently localized across homologous proteins, regardless of sequence entropy. Notably, these higher attention scores were often found in helical regions and the protein core, suggesting that the model prioritizes structurally important elements when predicting thermostability.
 
 
@@ -64,3 +68,4 @@ While TemBERTure represents a significant advancement, there are still opportuni
 TemBERTure marks a pivotal step forward in the prediction of protein thermostability. By combining the strengths of Deep Learning and data diversity, this framework offers a more accurate and informative approach than traditional methods. As the field continues to evolve, TemBERTure and similar models will play an increasingly important role in understanding and harnessing the power of proteins.
 
 For those interested in exploring TemBERTure further, the model and its data are available on [GitHub](https://github.com/ibmm-unibe-ch/TemBERTure).
+![1_Tftwr0C_9-Roo0jrB1nb4Q-removebg-preview](https://github.com/user-attachments/assets/c167d731-7afa-4b97-8f42-836086793d68)
