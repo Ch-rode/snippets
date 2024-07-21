@@ -1,16 +1,24 @@
-# TemBERTure: TemBERTure: Advancing protein thermostability prediction with Deep Learning and attention mechanisms
+<div align="center">   
+<img title="logo" alt="" src="logo.png"  width="600" height="300" align="center">      
+
+<br/><br/>
+[![DOI:10.1101/2024.03.28.587204](http://img.shields.io/badge/DOI-10.1101/2024.03.28.587204-F28C28.svg)](https://www.biorxiv.org/content/10.1101/2024.03.28.587204v1)
+
+</div>
+
+# Advancing protein thermostability prediction with Deep Learning and attention mechanisms
 
 #### Introduction
 
-In the dynamic field of biotechnology, understanding and predicting protein thermostability is essential for a multitude of applications, including pharmaceuticals, food production, and biofuel manufacturing. Protein thermostability refers to a protein's ability to remain stable and functional at elevated temperatures. Traditional experimental methods for determining this property are not only time-consuming and expensive but also often limited in scalability. However, recent advancements in Deep Learning, particularly those inspired by Natural Language Processing (NLP), have shown great promise in addressing these challenges. In this article, we explore TemBERTure, an innovative Deep Learning framework designed to predict protein thermostability.
+In the dynamic field of biotechnology, understanding and predicting **protein thermostability** is essential for a multitude of applications, including pharmaceuticals, food production, and biofuel manufacturing. Protein thermostability refers to a protein's ability to remain **stable** and **functional at elevated temperatures**. Traditional experimental methods for determining this property are not only **time-consuming** and **expensive** but also often limited in scalability. However, recent advancements in Deep Learning, particularly those inspired by **Natural Language Processing** (NLP), have shown great promise in addressing these challenges. In this article, we explore **TemBERTure**, an innovative **Deep Learning framework** designed **to predict protein thermostability**.
 
 #### The Importance of Protein Thermostability
 
-Proteins capable of withstanding high temperatures are invaluable in industrial processes as they can accelerate and enhance chemical reactions, leading to reduced production costs and improved efficiency. However, elevated temperatures can cause proteins to denature, losing their structure and biological activity. Understanding the factors that contribute to protein thermostability is thus critical for optimizing industrial applications. Traditional methods, such as differential scanning calorimetry and thermogravimetric analysis, provide detailed insights but are labor-intensive and costly, limiting their practicality for large-scale studies.
+Proteins capable of withstanding high temperatures are invaluable in industrial processes as they can **accelerate and enhance chemical reactions**, leading to reduced production costs and improved efficiency. However, elevated temperatures can cause proteins to denature, losing their structure and biological activity. Understanding the factors that contribute to protein thermostability is thus critical for **optimizing industrial applications**. Traditional methods, such as differential scanning calorimetry and thermogravimetric analysis, provide detailed insights but are labor-intensive and costly, limiting their practicality for large-scale studies.
 
 #### The Deep Learning Approach
 
-Deep Learning models have revolutionized many fields by enabling the automatic extraction of complex patterns from large datasets. In the context of protein thermostability, these models treat protein sequences as strings of amino acids, similar to how NLP models process sentences. By leveraging transformer-based models, which have demonstrated remarkable success in NLP, researchers can now predict protein properties more efficiently and accurately.
+Deep Learning models have revolutionized many fields by enabling the automatic extraction of complex patterns from large datasets. In the context of protein thermostability, these models treat **protein sequences as strings of amino acids**, similar to how NLP models process sentences. By leveraging **transformer-based models** (i.e.BERT), which have demonstrated remarkable success in NLP, researchers can now predict protein properties more efficiently and accurately.
 
 #### TemBERTure: A Novel Framework
 
