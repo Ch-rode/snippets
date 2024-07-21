@@ -51,6 +51,8 @@ Attention scores are a crucial component in deep learning architectures like tra
   <img src="img/S1_AA_enrichment_vs_HAS_clstestset.png" alt="S1_AA_ENRICHMENT" width="60%">
 </p>
 
+We performed a detailed analysis comparing the enrichment levels of each amino acid in protein sequences with their natural occurrence frequencies. By calculating the background frequency of each amino acid in the TemBERTureDB test set and comparing it to its appearance as a High Attention Score (HAS), we uncovered distinct patterns between thermophilic and non-thermophilic proteins. For instance, hydrophobic residues like alanine, phenylalanine, and leucine had increased HAS frequencies, suggesting their role in stabilizing the protein core through tight packing. In contrast, cysteine, known for forming stabilizing disulfide bridges, was more prominent in non-thermophiles. Glutamine and asparagine, which deamidate at high temperatures, showed reduced HAS, aligning with their expected rarity in these organisms. TemBERTureCLS also revealed preferences for different charged amino acids, with increased HAS for arginine and decreased HAS for lysine. 
+
 #### Can Sequence Alone Reveal Structural Insights?
 
 https://github.com/user-attachments/assets/e0803097-20bc-4ac1-a36c-b5da43b07866
