@@ -43,8 +43,12 @@ A critical aspect of TemBERTure's success is its **robust database**, TemBERTure
 
 Attention scores are a crucial component in deep learning architectures like transformers, which are used for predicting protein stability. By leveraging attention mechanisms, the model can selectively focus on critical regions of the sequence, enhancing the accuracy of its predictions. Attention mechanisms allow **TemBERTure** to focus on specific parts of the protein sequence that are most relevant to predicting thermostability. 
 
+![S1_AA_enrichment_vs_HAS_clstestset](https://github.com/user-attachments/assets/2e55d6e5-41e0-4ec1-8a7c-455e8ce4d657)
+
+
 #### Can Sequence Alone Reveal Structural Insights?
 By analyzing these attention scores alongside the 3D structure of proteins, we can gain deeper insights into the interactions between amino acids and their surrounding environment. We asked ourselves if TemBERTureCLS uses structural information beyond only sequence information. To do so, we mapped the attention scores directly onto protein structures. The analysis showed that higher attention scores were consistently localized across homologous proteins, regardless of sequence entropy. Notably, these higher attention scores were often found in helical regions and the protein core, suggesting that the model prioritizes structurally important elements when predicting thermostability.
+
 
 #### Results and Findings
 
