@@ -1,5 +1,5 @@
 <div align="center">   
-<img title="logo" alt="" src="logo.png"  width="600" height="300" align="center">      
+<img title="logo" alt="" src="img/logo.png"  width="600" height="300" align="center">      
 
 <br/><br/>
 [![DOI:10.1101/2024.03.28.587204](http://img.shields.io/badge/DOI-10.1101/2024.03.28.587204-F28C28.svg)](https://www.biorxiv.org/content/10.1101/2024.03.28.587204v1)
@@ -35,7 +35,11 @@ The foundation of TemBERTure lies in the protBERT-BFD model, a transformer-based
 #### Database Creation and Data Diversity
 
 A critical aspect of TemBERTure's success is its **robust database**, TemBERTureDB. This database was created by integrating data from multiple sources, including the **Meltome Atlas**, **ProThermDB**, **UniProtKB**, and **BacDive**. The integration of these diverse datasets ensures a comprehensive representation of both thermophilic and non-thermophilic sequences. To address class imbalance, the thermophilic dataset was enriched with additional sequences from the BacDive database, while the non-thermophilic dataset was augmented with challenging examples that exhibited high sequence similarity to thermophilic sequences.
-![F1_Pipeline_350](https://github.com/user-attachments/assets/dd3fa013-1c5a-4d6e-99b5-03c890f66e5c)
+
+
+<p align="center">
+  <img src="img/F1_Pipeline_350.png" alt="DATABASE" width="60%">
+</p>
 
 **Data diversity** plays a pivotal role in training robust models. TemBERTure's performance highlights the importance of a comprehensive data curation strategy. Models trained on a diverse set of protein sequences from various organisms consistently outperformed those trained on limited datasets. This diversity enables the model to capture the intrinsic features of thermostability rather than merely recognizing evolutionary lineages.
 
@@ -43,8 +47,9 @@ A critical aspect of TemBERTure's success is its **robust database**, TemBERTure
 
 Attention scores are a crucial component in deep learning architectures like transformers, which are used for predicting protein stability. By leveraging attention mechanisms, the model can selectively focus on critical regions of the sequence, enhancing the accuracy of its predictions. Attention mechanisms allow **TemBERTure** to focus on specific parts of the protein sequence that are most relevant to predicting thermostability. 
 
-![S1_AA_enrichment_vs_HAS_clstestset](https://github.com/user-attachments/assets/2e55d6e5-41e0-4ec1-8a7c-455e8ce4d657)
-
+<p align="center">
+  <img src="img/S1_AA_enrichment_vs_HAS_clstestset.png" alt="S1_AA_ENRICHMENT" width="60%">
+</p>
 
 #### Can Sequence Alone Reveal Structural Insights?
 
@@ -57,7 +62,10 @@ By analyzing these attention scores alongside the 3D structure of proteins, we c
 #### Results and Findings
 
 TemBERTure has demonstrated remarkable **capabilities in predicting protein thermostability**. The classifier (TemBERTureCLS) effectively distinguishes between thermophilic and non-thermophilic proteins, while the regression model (TemBERTureTm) predicts melting temperatures. These models offer significant improvements over traditional methods and previous machine learning approaches, underscoring the potential of Deep Learning in this field. The TemBERTureCLS model achieved an overall accuracy of 0.89, an F1-score of 0.9, and a Matthews Correlation Coefficient (MCC) of 0.78, demonstrating balanced predictive performance across both non-thermophilic and thermophilic sequences, with F1-scores of 0.88 and 0.90 respectively. The low standard deviation across multiple trained models indicates robust training, leading us to retain the initially trained model as the final version of TemBERTureCLS. When comparing TemBERTureCLS to other state-of-the-art models, it was observed that many of these models tend to overpredict the non-thermophilic class. Although these models achieved a competitive average precision of 0.79 for thermophilic sequences, their recall was below 0.7, resulting in numerous misclassifications of non-thermophilic proteins.
-![F2_SOTA_350](https://github.com/user-attachments/assets/1c0a2475-230b-4cee-86d8-eb297845980b)
+
+<p align="center">
+  <img src="img/F2_SOTA_350.png" alt="SOTA" width="40%">
+</p>
 
 #### Future Directions
 
@@ -68,4 +76,9 @@ While TemBERTure represents a significant advancement, there are still opportuni
 TemBERTure marks a pivotal step forward in the prediction of protein thermostability. By combining the strengths of Deep Learning and data diversity, this framework offers a more accurate and informative approach than traditional methods. As the field continues to evolve, TemBERTure and similar models will play an increasingly important role in understanding and harnessing the power of proteins.
 
 For those interested in exploring TemBERTure further, the model and its data are available on [GitHub](https://github.com/ibmm-unibe-ch/TemBERTure).
-![1_Tftwr0C_9-Roo0jrB1nb4Q-removebg-preview](https://github.com/user-attachments/assets/c167d731-7afa-4b97-8f42-836086793d68)
+
+
+<p align="center">
+  <img src="img/bert.png" alt="BERT" width="40%">
+</p>
+
