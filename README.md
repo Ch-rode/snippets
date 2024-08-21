@@ -55,10 +55,17 @@ https://pymolwiki.org/index.php/Spectrumbar
 `rsync -av --ignore-existing source-folder/* destination-folder/`
 
 ## Copy from UBELIX
-scp -r ciao@submit.unibe.ch://storage/homefs/ciao ./
+`scp -r ciao@submit.unibe.ch://storage/homefs/ciao ./`
 
 ## Install BLAST locally + set the path
 https://www.ncbi.nlm.nih.gov/books/NBK52640/
 
+## Create a grid of images by terminal using svg_stack (python2)
+```
+python svg_grid.py --rows 1 --cols 2  \
+./img/30_clusters_size.svg \
+./img/30barplot_avgsimilarities.svg \
+> hamming_distance_clusters.png
+```
 
 
