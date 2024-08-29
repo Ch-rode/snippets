@@ -27,8 +27,22 @@ git push -u origin master
 
 Before doing this you should create an ssh key on your local laptop (see following links for instructions) and add it on your personal page on github:  https://github.com/settings/keys
 
-Useful links: 
-[Github guide 1](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)[Github guide 2](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)[General git guide](https://www.google.com/search?q=markdown+how+to+do+code&client=ubuntu-sn&hs=zMX&channel=fs&sxsrf=APwXEddoS5FSYzkLooD9RFwasJaXk1Fs7Q%3A1686759285759&ei=deeJZJHwLYiB9u8PrqW28AU&ved=0ahUKEwjR_rGAlMP_AhWIgP0HHa6SDV4Q4dUDCA4&uact=5&oq=markdown+how+to+do+code&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQHjIGCAAQCBAeMggIABCKBRCGAzIICAAQigUQhgMyCAgAEIoFEIYDMggIABCKBRCGAzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoHCCMQsAIQJzoHCAAQDRCABDoGCAAQBxAeOggIABAIEAcQHjoGCAAQHhANOggIABAFEB4QDToICAAQBRAHEB5KBAhBGABQ0gZYsRdghhloAXABeACAAZIBiAH0BZIBAzkuMZgBAKABAcABAcgBCg&sclient=gws-wiz-serp)
+## Create a new repository on the command line
+
+echo "# SS_AA_tokenizer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ibmm-unibe-ch/SS_AA_tokenizer.git
+git push -u origin main
+
+## Push an existing repository from the command line
+
+git remote add origin https://github.com/ibmm-unibe-ch/SS_AA_tokenizer.git
+git branch -M main
+git push -u origin main
+
 
 ## from a3m to fasta
 .a3m is an advanced fasta format that allows for inserts, but prody does not like that, the simplest fix is to reformat a3m to fasta with [reformat.pl]([url](https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl)https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl), which is really fast.  
