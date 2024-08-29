@@ -28,7 +28,7 @@ git push -u origin master
 Before doing this you should create an ssh key on your local laptop (see following links for instructions) and add it on your personal page on github:  https://github.com/settings/keys
 
 ## Create a new repository on the command line
-
+```
 echo "# SS_AA_tokenizer" >> README.md
 git init
 git add README.md
@@ -36,13 +36,13 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ibmm-unibe-ch/SS_AA_tokenizer.git
 git push -u origin main
-
+```
 ## Push an existing repository from the command line
-
+```
 git remote add origin https://github.com/ibmm-unibe-ch/SS_AA_tokenizer.git
 git branch -M main
 git push -u origin main
-
+```
 
 ## from a3m to fasta
 .a3m is an advanced fasta format that allows for inserts, but prody does not like that, the simplest fix is to reformat a3m to fasta with [reformat.pl]([url](https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl)https://github.com/soedinglab/hh-suite/blob/master/scripts/reformat.pl), which is really fast.  
