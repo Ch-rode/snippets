@@ -52,4 +52,5 @@ Such that the uid and gid on server1 matches the ones on server2.
 
 ### Install package on Rocky Linux
 `sudo dnf -y install wxGTK3-devel`
+`sudo dnf -y install clustal-omega`
 
