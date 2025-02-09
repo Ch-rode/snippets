@@ -93,6 +93,22 @@ ROWS=$(( (N + COLS - 1) / COLS ))  # Calcola le righe
 montage *.png -geometry +0+0 -tile ${COLS}x${ROWS} output.png
 
 sudo apt install imagemagick  # Su Ubuntu/Debian
+
+mkdir -p combined_images  # Crea la cartella per le immagini combinate
+
+for img in DEKOSKY_DONOR1/*.png; do
+    full_filename=$(basename "$img")  # Esempio: "example_DEKOSKY_DONOR1.png"
+    
+    # Estrai solo il basename rimuovendo il suffisso "_NOMECARTELLA.png"
+    base_name=$(echo "$full_filename" | sed -E 's/_(DEKOSKY_DONOR1|DEKOSKY_DONOR2|DEKOSKY_DONOR3|IMV_3_22_24)\.png$//')
+
+    montage DEKOSKY_DONOR1/"${base_name}_DEKOSKY_DONOR1.png" \
+            DEKOSKY_DONOR2/"${base_name}_DEKOSKY_DONOR2.png" \
+            DEKOSKY_DONOR3/"${base_name}_DEKOSKY_DONOR3.png" \
+            IMV_3_22_24/"${base_name}_IMV_3_22_24.png" \
+            -tile 2x2 -geometry +2+2 combined_images/"${base_name}.png"
+done
+
 ```
 
 
