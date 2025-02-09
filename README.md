@@ -82,4 +82,17 @@ python svg_grid.py --rows 1 --cols 2  \
 > hamming_distance_clusters.png
 ```
 
+## imagemagick
+```
+montage *.png -geometry +0+0 -tile x output.png #Calcolare il layout automatico
+montage *.png -geometry +0+0 -tile 4x output.png #Specificare manualmente il numero di colonne
+
+N=$(ls *.png | wc -l)  # Conta il numero di immagini
+COLS=$(echo "sqrt($N)" | bc)  # Numero di colonne (radice quadrata arrotondata per difetto)
+ROWS=$(( (N + COLS - 1) / COLS ))  # Calcola le righe
+montage *.png -geometry +0+0 -tile ${COLS}x${ROWS} output.png
+
+sudo apt install imagemagick  # Su Ubuntu/Debian
+```
+
 
