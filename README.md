@@ -84,6 +84,7 @@ python svg_grid.py --rows 1 --cols 2  \
 
 ## imagemagick
 ```
+sudo apt install imagemagick  # Su Ubuntu/Debian
 montage *.png -geometry +0+0 -tile x output.png #Calcolare il layout automatico
 montage *.png -geometry +0+0 -tile 4x output.png #Specificare manualmente il numero di colonne
 
@@ -92,21 +93,31 @@ COLS=$(echo "sqrt($N)" | bc)  # Numero di colonne (radice quadrata arrotondata p
 ROWS=$(( (N + COLS - 1) / COLS ))  # Calcola le righe
 montage *.png -geometry +0+0 -tile ${COLS}x${ROWS} output.png
 
-sudo apt install imagemagick  # Su Ubuntu/Debian
-
+########## COMBINARE IMMAGINI
 mkdir -p combined_images  # Crea la cartella per le immagini combinate
 
 for img in DEKOSKY_DONOR1/*.png; do
-    full_filename=$(basename "$img")  # Esempio: "example_DEKOSKY_DONOR1.png"
+    full_filename=$(basename "$img")  # Es. "c_call_broad_PCA_with_marginalsDEKOSKY_DONOR1.png"
     
-    # Estrai solo il basename rimuovendo il suffisso "_NOMECARTELLA.png"
-    base_name=$(echo "$full_filename" | sed -E 's/_(DEKOSKY_DONOR1|DEKOSKY_DONOR2|DEKOSKY_DONOR3|IMV_3_22_24)\.png$//')
+    # Estrai il nome base rimuovendo "DEKOSKY_DONOR1" senza underscore
+    base_name=$(echo "$full_filename" | sed -E 's/(DEKOSKY_DONOR1|DEKOSKY_DONOR2|DEKOSKY_DONOR3|IMV_3_22_24)\.png$//')
 
-    montage DEKOSKY_DONOR1/"${base_name}_DEKOSKY_DONOR1.png" \
-            DEKOSKY_DONOR2/"${base_name}_DEKOSKY_DONOR2.png" \
-            DEKOSKY_DONOR3/"${base_name}_DEKOSKY_DONOR3.png" \
-            IMV_3_22_24/"${base_name}_IMV_3_22_24.png" \
-            -tile 2x2 -geometry +2+2 combined_images/"${base_name}.png"
+    echo "Processing: $base_name"
+
+    # Controllo che tutti i file esistano prima di chiamare montage
+    if [[ -f "DEKOSKY_DONOR1/${base_name}DEKOSKY_DONOR1.png" && \
+          -f "DEKOSKY_DONOR2/${base_name}DEKOSKY_DONOR2.png" && \
+          -f "DEKOSKY_DONOR3/${base_name}DEKOSKY_DONOR3.png" && \
+          -f "IMV_3_22_24/${base_name}IMV_3_22_24.png" ]]; then
+
+        montage DEKOSKY_DONOR1/"${base_name}DEKOSKY_DONOR1.png" \
+                DEKOSKY_DONOR2/"${base_name}DEKOSKY_DONOR2.png" \
+                DEKOSKY_DONOR3/"${base_name}DEKOSKY_DONOR3.png" \
+                IMV_3_22_24/"${base_name}IMV_3_22_24.png" \
+                -tile 2x2 -geometry +2+2 combined_images/"${base_name}.png"
+    else
+        echo "❌ Missing files for: $base_name"
+    fi
 done
 
 ```
