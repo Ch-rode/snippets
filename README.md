@@ -123,7 +123,7 @@ done
 ```
 
 ## MULTI-GPU training (with accelerate)
-nproc_per_node is the number of gpus
+nproc_per_node is the number of gpus, specify CUDA_VISIBLE_DEVICES in case of issues like i.e. "Duplicate GPU detected: rank 3 and rank 1 both on CUDA device a1000"  
 `CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 run_mlm_no_trainer.py`
 
 
