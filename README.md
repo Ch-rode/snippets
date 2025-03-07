@@ -122,4 +122,9 @@ done
 
 ```
 
+## MULTI-GPU training (with accelerate)
+nproc_per_node is the number of gpus
+`CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 run_mlm_no_trainer.py`
+
+
 
